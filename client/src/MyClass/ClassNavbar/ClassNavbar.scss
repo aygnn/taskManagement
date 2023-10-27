@@ -1,0 +1,15 @@
+.MyClass{
+    .class-nav{
+        display: flex;
+        border-bottom: 0.0625rem solid rgb(218,220,224);
+        height: 56px;
+        align-items: center;
+        gap: 4%;
+        padding-left: 7%;
+        a{
+        text-decoration: none;
+            color: grey;
+            font-weight: 700;
+        }
+    }
+}
