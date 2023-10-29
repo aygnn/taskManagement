@@ -1,26 +1,28 @@
-.home-page{
+.home-page {
     position: relative;
     display: flex;
-    height: 86vh    ;
+    height: 86vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    .img{
-        img{
+
+    .img {
+        img {
             width: 135px;
         }
     }
-    .adding{
-        p{
+
+    .adding {
+        p {
             letter-spacing: .01785714em;
-    font-size: 0.875rem;
-    font-weight: 700;
-    line-height: 1.25rem;
-    color: #3c4043;
+            font-size: 0.875rem;
+            font-weight: 700;
+            line-height: 1.25rem;
+            color: #3c4043;
 
         }
 
-        .class-card{
+        .class-card {
             left: 50%;
             top: 50%;
             transform: translate(-50%, -50%);
@@ -33,35 +35,48 @@
             width: 500px;
             height: 332px;
             border-radius: 3px;
-  border: 1px solid #00000017;
+            border: 1px solid #00000017;
 
-            .title{
+            .title {
                 font-weight: 600;
                 text-align: left;
                 margin-left: 32px;
             }
-            .inputs{
-                width: 447px;
-    margin: 0 auto;
 
-    .mb-3{
-        display: flex;
-        flex-direction: column;
-        gap: 21px;
-        input{
-            height: 46px;
-        }
-    }
+            .from {
+                height: 77%;
+
             }
-.cancel-create{
-    .MuiStack-root{
-        justify-content: space-evenly;
-        a{
-            color: white;
-            text-decoration: none;
-        }
-    }
-}
+
+            .inputs {
+                height: 100%;
+                width: 447px;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+
+                .mb-3 {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 21px;
+
+                    input {
+                        height: 46px;
+                    }
+                }
+            }
+
+            .cancel-create {
+                .MuiStack-root {
+                    justify-content: space-evenly;
+
+                    a {
+                        color: white;
+                        text-decoration: none;
+                    }
+                }
+            }
         }
 
     }
@@ -69,49 +84,83 @@
 
 
 .button-5 {
-  align-items: center;
-  background-clip: padding-box;
-  background: linear-gradient(90deg, rgba(254,176,106,1) 0%, rgb(247 214 166) 47%, rgba(254,197,120,1) 100%);
+    align-items: center;
+    background-clip: padding-box;
+    background: linear-gradient(90deg, rgba(254, 176, 106, 1) 0%, rgb(247 214 166) 47%, rgba(254, 197, 120, 1) 100%);
 
-  border: 1px solid transparent;
-  border-radius: .25rem;
-  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
-  box-sizing: border-box;
-  color: #fff;
-  cursor: pointer;
-  display: inline-flex;
-  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-  justify-content: center;
-  line-height: 1.25;
-  margin: 0;
-  min-height: 3rem;
-  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
-  position: relative;
-  text-decoration: none;
-  transition: all 250ms;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  vertical-align: baseline;
-  width: auto;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: system-ui, -apple-system, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 1.25;
+    margin: 0;
+    min-height: 3rem;
+    padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+    position: relative;
+    text-decoration: none;
+    transition: all 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    width: auto;
 }
 
 .button-5:hover,
 .button-5:focus {
-    background: linear-gradient(90deg, rgba(254,176,106,1) 0%, rgb(247 214 166) 47%, rgba(254,197,120,1) 100%);
+    background: linear-gradient(90deg, rgba(254, 176, 106, 1) 0%, rgb(247 214 166) 47%, rgba(254, 197, 120, 1) 100%);
 
-  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
 }
 
 .button-5:hover {
-  transform: translateY(-1px);
+    transform: translateY(-1px);
 }
 
 .button-5:active {
-    background: linear-gradient(90deg, rgba(254,176,106,1) 0%, rgb(247 214 166) 47%, rgba(254,197,120,1) 100%);
+    background: linear-gradient(90deg, rgba(254, 176, 106, 1) 0%, rgb(247 214 166) 47%, rgba(254, 197, 120, 1) 100%);
 
-  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
-  transform: translateY(0);
+    box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+    transform: translateY(0);
+}
+
+.dates {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .date-icon {
+        display: flex;
+        align-items: center;
+
+        svg {
+            font-size: 23px;
+            color: green;
+        }
+
+        p {
+            margin-left: 14px;
+            letter-spacing: 0.01785714em;
+            font-size: 0.875rem;
+            font-weight: 700;
+            line-height: 1.25rem;
+            color: #3c4043;
+            margin-bottom: 0;
+        }
+    }
+
+    .react-datepicker-wrapper {
+        input {
+            border: 1px solid #8080804a;
+            border-radius: 6px;
+            width: 217px;
+        }
+    }
 }

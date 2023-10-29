@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
 .main-nav{
     height: 96px;
     display: flex;
@@ -16,6 +17,10 @@
         width: 230px;
         display: flex;
         justify-content: space-evenly;
+        a{
+            text-decoration: none;
+            color: black;
+        }
         .login{
             button{
                 cursor: pointer;
@@ -46,10 +51,62 @@
                 border-color: #727ef1;
                 border-radius: 5px 5px 5px 5px;
                 padding: 15px 20px;
+                a{
+          color: white;
+
+                }
             }
             button:hover{
                 background-color: #4053FF;
             }
         }
     }
+
+    .login-panel{
+        width: 20%;
+        font-size: 14px;
+          color: #252525;
+          display: flex;
+          padding-left: 20px;
+          cursor: pointer;
+          align-items: center;
+          gap: 9px;
+          .task-navbar {
+            width: 100%;
+        }
+        .task-navbar2{
+            cursor: pointer;
+              color: #e58e41;
+              font-size: 15px;
+              font-weight: 600;
+            //   text-decoration: underline;
+              svg{
+                font-size: 26px;
+              }
+              
+            }
+            .task-navbar2:hover{
+              transition: 0.3s all;
+              font-size: 17px;
+              text-shadow: 0px 1px 10px rgb(229 189 59 / 46%);
+            }
+          div{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            svg{
+                margin-right: 8px;
+            }
+          }
+          .user{
+            text-transform: capitalize;
+            color: black;
+            font-weight: 600;
+            text-decoration: none;
+            svg{
+              font-size: 22px;
+              color: black;
+            }
+        }
+}
 }

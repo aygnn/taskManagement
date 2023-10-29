@@ -1,0 +1,231 @@
+.editPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 3%;
+    width: 100%;
+
+    .teacher {
+        text-transform: capitalize;
+        text-align: left;
+        width: 63%;
+        margin: 0 auto;
+        margin-bottom: 5%;
+
+        .admin {
+            color: rgb(25, 103, 210);
+            border-bottom: 1px solid rgb(66, 133, 244);
+            height: 55%;
+            margin-bottom: 16px;
+            padding-left: 21px;
+            display: flex;
+            justify-content: space-between;
+
+            .taskName {
+                color: green;
+
+                h2 {
+
+                    font-weight: 700;
+                }
+            }
+        }
+
+
+    }
+
+    .users {
+        text-align: left;
+        width: 63%;
+        margin: 0 auto;
+
+        .students {
+            color: rgb(25, 103, 210);
+            border-bottom: 1px solid rgb(66, 133, 244);
+            height: 35%;
+            margin-bottom: 16px;
+            padding-left: 21px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-right: 21px;
+
+            .add {
+                font-size: 31px;
+
+                svg {
+                    font-size: 34px;
+                }
+            }
+
+
+            .class-card {
+                padding: 25px;
+                padding-top: 21px;
+
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                background-color: white;
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                width: 500px;
+                // height: 500px;
+                border-radius: 3px;
+                border: 1px solid #00000017;
+
+
+                .title {
+                    font-weight: 700;
+                    // margin-left: 5%;
+                }
+
+                .user_link {
+                    // margin-top: -28px;
+                    border-bottom: 0.0625rem solid #e0e0e0;
+                    padding: 0.1rem 0 0.5rem;
+
+                    p {
+                        letter-spacing: .01785714em;
+                        font-family: Roboto, Arial, sans-serif;
+                        font-size: 0.875rem;
+                        font-weight: 700;
+                        line-height: 1.25rem;
+                        color: #3c4043;
+                        margin-bottom: 0;
+                    }
+
+                    div {
+                        letter-spacing: .025em;
+                        font-family: Roboto, Arial, sans-serif;
+                        font-size: 0.75rem;
+                        font-weight: 400;
+                        line-height: 1rem;
+                        color: #5f6368;
+
+                        svg {
+                            font-size: 24px;
+                            color: rgb(25, 103, 210);
+                        }
+                    }
+
+                }
+
+                .invites {
+                    margin-top: 16px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+
+                    p {
+                        margin-bottom: 0;
+                        font-weight: 700;
+                        color: #3c4043;
+                        margin-bottom: 0;
+                        border-bottom: 0.0625rem solid #e0e0e0;
+
+
+                    }
+
+                    .collabs {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-around;
+                        gap: 12px;
+                        border: 1px solid #8080804d;
+                        border-radius: 5px;
+                        padding: 16px;
+                        padding-bottom: 24px;
+
+                        .collab {
+                            display: flex;
+                            justify-content: space-between;
+                            margin-left: 12px;
+                            margin-right: 12px;
+                            border-bottom: 0.0625rem solid #e0e0e0;
+
+                            .collab_name {
+                                font-size: 14px;
+                                font-weight: 600;
+                            }
+
+
+                        }
+                    }
+
+                    .stack {
+                        // margin-top: 92px;
+                        display: flex;
+                        justify-content: flex-end;
+                        margin-right: 22px;
+                    }
+                }
+
+            }
+        }
+
+        .lists {
+            display: flex;
+            flex-direction: column;
+            gap: 22px;
+        }
+    }
+
+    .back {
+        margin-left: 73%;
+        padding: 15px;
+        margin-top: 28px;
+
+    }
+
+}
+
+.admin_name {
+    display: flex;
+    align-items: center;
+    padding-left: 21px;
+    justify-content: space-between;
+
+    .adlar {
+        display: flex;
+        align-items: flex-end;
+        gap: 12px;
+
+        p {
+            font-weight: 600;
+
+        }
+    }
+
+    .icon-del {
+        margin-right: 31px;
+
+        svg {
+            cursor: pointer;
+            color: #fbb33b;
+            font-size: 29px;
+        }
+    }
+
+    .icon-del:hover {
+        svg {
+            transition: 0.3s all;
+            font-size: 31px;
+            text-shadow: 0px 1px 10px rgb(229 189 59 / 46%);
+
+        }
+    }
+
+    img {
+        border-radius: 50%;
+        height: 39px;
+    }
+
+    p {
+        text-transform: capitalize;
+        margin: 0;
+    }
+}

@@ -1,0 +1,166 @@
+.tasks {
+    text-transform: capitalize;
+    gap: 23px;
+    padding: 38px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    .myTask {
+        display: flex;
+        flex-direction: column;
+
+        .like {
+            gap: 23px;
+            padding: 38px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+    }
+
+    .task {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        position: relative;
+        width: 300px;
+        height: 295px;
+        background-color: #fff;
+        border: 0.0625rem solid #dadce0;
+        border-radius: 0.5rem;
+
+        .up {
+            display: flex;
+            border-radius: 0.5rem;
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+            height: 100px;
+            background-color: rgb(25, 103, 210);
+            color: white;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: flex-start;
+            padding-left: 22px;
+
+            h3 {
+                font-size: 1.6rem;
+                font-weight: 400;
+                line-height: 1.75rem;
+                color: #fff;
+            }
+
+            .author {
+                font-size: 13px;
+                text-decoration: underline;
+                cursor: pointer;
+            }
+        }
+
+        .sector_2 {
+            .auth {
+                position: absolute;
+                right: 18px;
+                top: 15px;
+
+                p {
+                    text-align: left;
+                    padding: 14px;
+                    font-size: 13px;
+                }
+
+                img {
+                    border-radius: 50%;
+                }
+            }
+
+        }
+
+        .sector_3 {
+            border-top: 0.0625rem solid rgb(218, 220, 224);
+            line-height: 0;
+            height: 51px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            padding: 27px;
+
+            .dead {
+                animation: blink 1s infinite;
+                /* 1 saniyede bir yanıp sönecek */
+
+                color: red;
+                font-weight: 600;
+            }
+
+            .acsess {
+                font-size: 12px;
+                display: flex;
+                align-items: center;
+
+                svg {
+                    cursor: pointer;
+                    font-size: 20px;
+                }
+
+                .icon-del {
+                    position: absolute;
+                    left: 94%;
+                    bottom: -3%;
+
+                    svg {
+                        font-size: 30px;
+                        color: grey;
+                    }
+                }
+            }
+        }
+    }
+
+    .no_task {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 100px;
+        gap: 20px;
+
+        .blink {
+
+            text-transform: uppercase;
+            color: #ffaf00;
+            animation: blinking 1s infinite;
+        }
+
+    }
+
+}
+
+@keyframes blinking {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
